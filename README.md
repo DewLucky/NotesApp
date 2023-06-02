@@ -1,6 +1,7 @@
 # Notes App
 
 Notes App is a simple web application that allows users to create, manage, and organize their notes effectively. The app provides a clean and intuitive interface for users to write and save their notes.
+Checkout the live page: https://dewlucky.github.io/NotesApp/
 
 ## Features
 
