@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Notes App</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li id="brand-logo" class="nav-item">Notefy</li>
+                    <a id="archivePage" href="archive.html" class="nav-item">Archives</a>
+                    <li class="nav-item">login</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="inputContainer">
+            <input type="text" placeholder="Title" id="title">
+            <textarea name="Note" id="content" cols="30" rows="10" placeholder="Note"></textarea>
+            <button id="addNote">+</button>
+        </div>
+
+        <div id="notesList">
+            
+        </div>
+        <div id="alertBackground"></div>
+        <div id="alert-message">
+            <div class="message">
+               <p>Please add a note!</p>
+               <button id="alert-off">Ok</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="notes.js"></script>
+</body>
+</html>

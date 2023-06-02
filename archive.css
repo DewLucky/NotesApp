@@ -1,0 +1,129 @@
+:root {
+  --primary-light: #fce9f1;
+  --primary-dark: #111010;
+  --secondary-light: #f1d4e5;
+  --heading-color: #ff55bb;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ***************Container***************** */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-dark);
+  padding: 10px 30px;
+  transition: all 0.3s ease-in-out;
+  color: var(--primary-light);
+  position: relative;
+}
+
+/* *************** Back Home button******************** */
+.backBtn {
+  border: 1px solid var(--primary-light);
+  padding: 5px 10px;
+  text-align: center;
+  display: block;
+  width: 80px;
+  margin-bottom: 20px;
+  color: var(--primary-light);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  position: sticky;
+  top: 10px;
+}
+
+.backBtn:hover {
+  border: 1px solid var(--heading-color);
+}
+
+/* ************** Archived Unordered List******************* */
+#archivedList {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+}
+
+/* ******************Archived Item*********************** */
+.archivedNote {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--primary-light);
+}
+
+.noteTitle {
+  color: var(--heading-color);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: var(--primary-font);
+}
+
+.noteContent {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: var(--primary-light);
+}
+
+/* **************buttons container**************** */
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+/* ***************Delete permanent button*******************8 */
+.delete {
+  border: 1px solid var(--primary-light);
+  padding: 5px;
+  text-align: center;
+  width: 110px;
+  margin-bottom: 10px;
+  transition: all 0.1s ease-in-out;
+  font-family: var(--secondary-font);
+}
+
+.delete:hover {
+  border: 1px solid var(--heading-color);
+  cursor: pointer;
+}
+
+/* ******************UnArchive button******************** */
+.archive {
+  border: 1px solid var(--primary-light);
+  padding: 5px;
+  text-align: center;
+  width: 120px;
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+  transition: all 0.1s ease-in-out;
+}
+
+.archive:hover {
+  border: 1px solid var(--heading-color);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1074px)  {
+    #archivedList{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #archivedList{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
